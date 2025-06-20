@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav_list">
+            <li><a href="#home" onclick="activeLink()" style="--i:1;" class="active">Home</a></li>
+            <li><a href="#skills" onclick="activeLink()" style="--i:2;">Skills</a></li>
+            <li><a href="#projects" onclick="activeLink()" style="--i:3;">Projects</a></li>
+            <li><a href="#contact" onclick="activeLink()" style="--i:4;">Contact</a></li>
+            <button id="modeToggle">🌝 Toggle Mode</button>
+        </ul>
+        
+    </nav>
+
+    <div id="home" class="first-section">
+        <div class="left-container">
+            <h2>I'm Dwarkadhish </h2>
+            <h3><span class="multiple-text"></span></h3>
+
+            <p>Student of Computer Engineering<br>Currently learning <span>Python Stack</span> and Working on
+                projects.<br>This is my <span>Portfolio Website</span>. Hope you like it.</p>
+
+            <div class="social-media">
+                <a href="https://github.com/DwarkadhishKapse" style="--i:7;"><i class='bx bxl-github'></i></a>
+                <a href="https://x.com/Dwarkadhish3100" style="--i:8;"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/dwark__ish/" style="--i:9;"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/dwarkadhish-kapse-2a676a287/" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="images/DwarkadhishKapseResume Final.pdf" class="resume-btn" download="images/DwarkadhishKapseResume Final.pdf">Resume</a>
+        </div>
+
+        <span class="right-container">
+            <img src="images/workboy.png" alt="Marshall Lee">
+        </span>
+    </div>
+
+    <div id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-sections">
+            <div class="first-skills">
+                <h4>A bit about me</h4>
+                <p>I'm a self-taught web developer and Mobile App Developer with experience in designing new features
+                    from ideation to production, implementation of wireframes, and design flows into high-performance
+                    software applications. I take into consideration the user experience while writing reusable and
+                    efficient code. I passionately combine good design, technology, and innovation in all my projects,
+                    which I like to accompany from the first idea to release. Currently, I'm focused on backend
+                    development.</p>
+            </div>
+
+            <div class="image-right"><img src="images/developer_boy-removebg-preview.png" alt="developer-boy"></div>
+
+            <div class="second-skills">
+                <h4>Technologies that I learned</h4>
+                <div class="languages-logo">
+                    <a href="https://www.codecademy.com/learn/learn-c-plus-plus"><span><img
+                                src="images/language icons/c++.png" alt="C++"></span></a>
+
+                    <a href="https://www.python.org/"><span><img src="images/language icons/python-logo.png"
+                                alt="Python"></span></a>
+
+                    <a href="https://www.codecademy.com/learn/introduction-to-javascript"><span><img
+                                src="images/language icons/javascript.png" alt="JavaScript"></span></a>
+
+                    <!-- <a href="https://react.dev/"><span><img src="images/language icons/react.png"
+                                alt="React"></span></a> -->
+
+                    <a href="https://www.mongodb.com/"><span><img src="images/language icons/Mongodb.png"
+                                alt="MongoDB"></span></a>
+
+                    <a href="https://nodejs.org/en"><span><img src="images/language icons/nodejs.png"
+                                alt="Node.js"></span></a>
+
+                    <a href="https://www.java.com/en/"><span><img src="images/language icons/java.png"
+                                alt="Java"></span></a>
+
+                    <a href="https://developer.android.com/"><span><img src="images/language icons/android.png"
+                                alt="Android"></span></a>
+
+
+                    <span><img src="images/language icons/php.png" alt="PHP"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="projects" id="projects">
+        <h1>Latest <span>Project</span></h1>
+
+        <div class="projects-content">
+            <div class="projects-card" style="--i:3;">
+                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1641735076263/dU7NoxN4Q.png?auto=compress,format&format=webp"
+                    alt="">
+            </div>
+            <div class="projects-card" style="--i:4;">
+                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1641735363110/8jvZFBOeH.png?auto=compress,format&format=webp"
+                    alt="">
+            </div>
+            <div class="projects-card" style="--i:5;">
+                <img src="images/shoes.png" alt="">
+            </div>
+            <div class="projects-card" style="--i:3;">
+                <img src="images/chatapp.png" alt="">
+            </div>
+            <div class="projects-card" style="--i:4;">
+                <img src="images/foodsite.jpg" alt="">
+            </div>
+            <div class="projects-card" style="--i:5;">
+                <img src="images/freelance.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-section">
+            <!-- Left Form -->
+            <form action="your-action-url" method="POST">
+                <div class="contact-form">
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="Enter your name" name="fullname" id="name"><br>
+            
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Enter your email" name="email" id="email"><br>
+            
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" placeholder="Enter your message" cols="39" rows="7"></textarea><br>
+            
+                    <button type="submit" class="form-btn">Submit</button>
+                </div>
+            </form>
+            
+    
+            <!-- Right Form (Contact Info) -->
+            <div class="right-form">
+                <h2 class="info">Email</h2>
+                <a href="mailto:dwarkadhishkapse@gmail.com" target="._blank">dwarkadhishkapse@gmail.com</a>
+    
+                <h2 class="info">Address</h2>
+                <a href="https://maps.app.goo.gl/dmfq7PsLaiUyjyGs8">Vivekanand Nagar, Jalgaon <br> <span>India</span></a>
+
+                <h2 class="info">Social</h2>
+                <div class="contact-social-media">
+                    <a href="https://www.linkedin.com/in/dwarkadhish-kapse-2a676a287/" id="1"><img src="images/social media/linkedin.png" alt="" width="35px"></a>
+                    <a href="https://www.instagram.com/dwark__ish/" id="2"><img src="images/social media/instagram.png" alt="" width="35px"></a>
+                    <a href="https://x.com/Dwarkadhish3100" id="3"><img src="images/social media/twitter.png" alt="" width="35px"></a>
+                    <a href="https://wa.link/6lacp3" id="4"><img src="images/social media/whatsapp.png" alt="" width="35px"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with &#128526; by Dwarkadhish Kapse</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        function activeLink(event) {
+            const clickedElement = event.target;
+
+            // Remove 'active' class from all links
+            const allLinks = document.querySelectorAll('a');
+            allLinks.forEach(link => link.classList.remove('active'));
+
+            // Add 'active' class to the clicked element
+            clickedElement.classList.add('active');
+        }    
+
+        var typed = new Typed(".multiple-text", {
+            strings: ['Fullstack Developer', 'Python Developer', 'Web Developer'],
+            typeSpeed: 100,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+        })
+
+        // Toggle Dark Mode
+        const moonIcon = document.getElementById('moon-icon');
+        const sunIcon = document.getElementById('sun-icon');
+        const body = document.body;
+
+        // Check for saved user preference in localStorage
+        /*if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            sunIcon.style.display = 'inline-block';
+            moonIcon.style.display = 'none';
+        }
+
+        moonIcon.addEventListener('click', () => {
+            body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+            sunIcon.style.display = 'inline-block';
+            moonIcon.style.display = 'none';
+        });
+
+        sunIcon.addEventListener('click', () => {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'inline-block';
+        }); */
+    </script>
+
+</body>
+
+</html>
