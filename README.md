@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-Welcome to my **personal portfolio website** – a modern, responsive, and animated website built to showcase my skills, projects, and contact information. This site reflects my journey and passion as a **Web & Android Developer**.
+Welcome to my **personal portfolio website** – a modern, responsive, and animated website built to showcase my skills, projects, and contact information. This site reflects my journey and passion as a **Web & Python Developer**.
 
 ---
 
