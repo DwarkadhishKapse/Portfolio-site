@@ -24,7 +24,7 @@ body {
     --secondary-color: #1fced4;
     --text-color: #333;
     --background-color: #f8f8f8;
-    --dark-background-color: #323846;
+    /* --dark-background-color: #323846; */
     --light-text-color: #ffffff;
     --social-media-color: black;
     --navbar-background: transparent;
@@ -568,8 +568,8 @@ textarea:hover {
     transform: scale(1.2);
 }
 
-footer{
-    background-color: var(--dark-background-color);
+footer {
+    background-color: var(--background-color);
     color: var(--text-color);
     text-align: center;
     /* margin-bottom: 20px; */
@@ -577,7 +577,7 @@ footer{
     font-weight: 400;
     word-spacing: 2px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 footer:hover{
